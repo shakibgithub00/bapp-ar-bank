@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bapp ar bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-10">let's get some 
+            <span class="text-purple-500">Mooooooney</span></h1>
+    </header>
+    <main>
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-20">
+            <div class="bg-blue-500 text-white p-8 font-medium text-center rounded-md">
+                <h4 class="text-2xl mb-5">Deposit</h4>
+                <h2 class="text-5xl ">$<span id="money-depo">00</span></h2>
+            </div>
+            <div class="bg-green-500 text-white p-8 font-medium text-center rounded-md">
+                <h4 class="text-2xl mb-5">Balance</h4>
+                <h2 class="text-5xl">$1240</h2>
+            </div>
+            <div class="bg-red-500 text-white p-8 font-medium text-center rounded-md">
+                <h4 class="text-2xl mb-5">Withdraw</h4>
+                <h2 class="text-5xl">$00</h2>
+            </div>
+        </div> 
+
+        <!-- deposit & withdraw -->
+
+        <div class="grid grid-cols-2 gap-5 mx-auto w-9/12 mt-20">
+            <div class="bg-teal-600 p-8 font-medium text-center rounded-md">
+                <h4 class="text-2xl mb-5 text-white">Deposit</h4>
+
+                <input class="w-9/12 p-2 rounded-md" type="text" name="" id="deposit-filed" placeholder="$ do you want to deposit">
+
+                <button id="depo-btn" class="hover:bg-sky-700 bg-rose-600 block mx-auto text-neutral-100 font-semibold p-2 rounded-md w-auto text-2xl mt-4">Deposit</button>
+            </div>
+            <div class="bg-cyan-600 p-8 font-medium text-center rounded-md">
+                <h4 class="text-2xl mb-5 text-white">Withdraw</h4>
+
+                <input class="w-9/12 p-2 rounded-md " type="text" name="" id="withdraw-filed" placeholder="$ do you want to withdraw">
+
+                <button class="hover:bg-sky-700 block mx-auto bg-rose-600 text-neutral-100 font-semibold p-2 rounded-md w-auto text-2xl mt-4">Withdraw</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="js/deposit.js"></script>
+</body>
+</html>
